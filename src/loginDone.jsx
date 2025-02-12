@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const loginDone = () => {
   return (
     <div>
       <h3>로그인 완료!!</h3>
@@ -8,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default loginDone;

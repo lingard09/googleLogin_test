@@ -13,6 +13,10 @@ const GoogleLogin = () => {
     
     // URL 파라미터 설정
     const authUrl = new URL('https://accounts.google.com/o/oauth2/v2/auth');
+    console.log("id: "+ process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID);
+    console.log("uri: " + process.env.REACT_APP_GOOGLE_AUTH_REDIRECT_URI);
+    console.log("id: "+ process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID);
+
     
     // 환경변수에서 값을 가져와 URL에 추가
     authUrl.searchParams.append('client_id', process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID);

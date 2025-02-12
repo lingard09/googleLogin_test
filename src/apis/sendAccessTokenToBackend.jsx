@@ -2,8 +2,10 @@ import axios from "axios";
 
 const sendAccessTokenToBackend = async (idToken) => {
   try {
+    axios.post("https://jinjigui.info/api/auth/google/session", null, {params: {credential: idToken}});
+    
     const serverResponse = await axios.post(
-      `${process.env.REACT_APP_HOST_URL}/login`,
+      `https://jinjigui.info/api/auth/google/session`,
       {},
       {
         headers: {
